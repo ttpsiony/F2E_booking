@@ -4,7 +4,7 @@
 
 ---
 
-## Side Product
+## Side Product
 
 1. 這是練習 F2E 的題目，並參考 webpack v4 官網，建立打包環境。
 2. 加入了 airbnb eslint，了解基礎的 eslint 設定。
