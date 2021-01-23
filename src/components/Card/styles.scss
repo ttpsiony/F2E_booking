@@ -1,0 +1,24 @@
+.card {
+	position: relative;
+	width: 100%;
+	height: calc(100% - 72px);
+	padding: 4px;
+
+	.image-wrapper {
+		width: 100%;
+		border-radius: 8px;
+		overflow: hidden;
+	}
+
+	.room-type {
+		font-size: 20px;
+		margin-top: 15px;
+		color: #101010;
+	}
+
+	.weekday-price,
+	.weekend-price {
+		font-size: 14px;
+		color: #8a8a8a;
+	}
+}

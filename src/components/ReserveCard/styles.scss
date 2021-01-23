@@ -1,0 +1,160 @@
+.reserve-card-container {
+	width: 100%;
+	.card {
+		box-shadow: 0px 3px 6px #00000029;
+		background: #fff;
+		padding: 15px;
+		border-radius: 4px;
+	}
+
+	.price > div {
+		display: flex;
+		align-items: center;
+		color: #101010;
+		span:nth-child(1) {
+			font-size: 18px;
+		}
+		span:nth-child(2) {
+			color: #707070;
+			font-size: 14px;
+			margin-left: 8px;
+		}
+	}
+
+	.calendar {
+		> div:nth-child(1) {
+			color: #707070;
+			font-size: 14px;
+			margin: 15px 0 4px;
+		}
+	}
+
+	.date-input-wrapper {
+		position: relative;
+		display: flex;
+		align-items: center;
+		border-bottom: 1px solid #707070;
+		padding-bottom: 4px;
+
+		> div {
+			flex: auto;
+			position: relative;
+			i {
+				margin: 0;
+				position: absolute;
+				right: 2px;
+				top: 8px;
+				color: #66c0dc;
+				box-shadow: 0px 1px 3px #ccc;
+				border-radius: 50%;
+				cursor: pointer;
+				transform: scale(0.85);
+				opacity: 0;
+				transition: opacity 200ms ease-in-out;
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+
+		input[type='text'] {
+			border: none;
+			outline: none;
+			padding: 4px;
+			padding-right: 0;
+			width: 100%;
+			font-size: 16px;
+
+			&::placeholder {
+				color: #707070;
+				opacity: 0.5;
+			}
+
+			&:focus {
+				background: #fadd02;
+				border-radius: 2px;
+			}
+
+			&:hover + i {
+				opacity: 1;
+			}
+		}
+
+		i {
+			margin-left: 4px;
+			margin-right: 4px;
+		}
+	}
+
+	.summary-wrapper {
+		margin: 15px 0;
+
+		.weekday,
+		.weekend,
+		.total {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			color: #707070;
+			font-size: 14px;
+			padding: 4px 0;
+		}
+
+		.total {
+			border-top: 1px solid #efefef;
+			> span:nth-child(2) {
+				color: #fadd02;
+				font-size: 20px;
+			}
+		}
+	}
+
+	.warning-tip {
+		color: #f24030;
+		font-size: 14px;
+		margin: 8px 0;
+	}
+
+	.button-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 15px;
+		flex-direction: column;
+		z-index: 3;
+
+		span.tip {
+			color: #484848;
+			font-size: 14px;
+			margin-top: 8px;
+		}
+
+		button {
+			width: 100%;
+			outline: none;
+			padding: 8px 15px;
+			transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s,
+				-webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+			border: none;
+			background: linear-gradient(
+				to right,
+				rgb(230, 30, 77) 0%,
+				rgb(227, 28, 95) 50%,
+				rgb(215, 4, 102) 100%
+			);
+			color: rgb(255, 255, 255);
+
+			&:active {
+				transform: scale(0.96);
+				border: none;
+				background: rgb(255, 56, 92);
+				color: rgb(255, 255, 255);
+			}
+
+			span {
+				margin-left: 8px;
+				font-size: 16px;
+			}
+		}
+	}
+}

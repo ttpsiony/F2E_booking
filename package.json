@@ -1,0 +1,75 @@
+{
+	"name": "booking",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "better-npm-run watch-start",
+		"local": "better-npm-run watch-local",
+		"build": "better-npm-run watch-build"
+	},
+	"betterScripts": {
+		"watch-start": {
+			"command": "webpack-dev-server"
+		},
+		"watch-local": {
+			"command": "webpack-dev-server"
+		},
+		"watch-build": {
+			"command": "webpack --config webpack.config.prod.js"
+		}
+	},
+	"keywords": [
+		"F2E"
+	],
+	"author": "",
+	"license": "ISC",
+	"browserslist": "> 1%, last 2 versions",
+	"devDependencies": {
+		"@babel/core": "^7.12.3",
+		"@babel/plugin-proposal-class-properties": "^7.12.1",
+		"@babel/polyfill": "^7.12.1",
+		"@babel/preset-env": "^7.12.1",
+		"@babel/preset-react": "^7.12.5",
+		"@babel/preset-stage-2": "^7.8.3",
+		"autoprefixer": "^10.0.1",
+		"babel-eslint": "^10.1.0",
+		"babel-loader": "^8.1.0",
+		"better-npm-run": "^0.1.1",
+		"css-loader": "^5.0.1",
+		"eslint": "^7.2.0",
+		"eslint-config-airbnb": "^18.2.1",
+		"eslint-loader": "^4.0.2",
+		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
+		"eslint-plugin-react": "^7.21.5",
+		"eslint-plugin-react-hooks": "^4.0.0",
+		"file-loader": "^6.2.0",
+		"html-webpack-plugin": "^4.5.0",
+		"mini-css-extract-plugin": "^1.3.0",
+		"postcss-loader": "^4.0.4",
+		"sass": "^1.29.0",
+		"sass-loader": "^7.2.0",
+		"style-loader": "^2.0.0",
+		"url-loader": "^4.1.1",
+		"webpack": "^4.44.1",
+		"webpack-cli": "^3.3.12",
+		"webpack-dev-server": "^3.11.0"
+	},
+	"dependencies": {
+		"classnames": "^2.2.6",
+		"connected-react-router": "^6.8.0",
+		"history": "^4.10.1",
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1",
+		"react-redux": "^7.2.2",
+		"react-router": "^5.2.0",
+		"react-router-dom": "^5.2.0",
+		"react-spring": "^8.0.27",
+		"redux": "^4.0.5",
+		"redux-actions": "^2.6.5",
+		"redux-logger": "^3.0.6",
+		"redux-saga": "^1.1.3",
+		"styled-components": "^5.2.1"
+	}
+}
